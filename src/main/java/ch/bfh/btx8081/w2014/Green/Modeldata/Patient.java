@@ -2,7 +2,7 @@
 //*@version 1.0
 //* @author team Green
 
-package ch.bfh.bxt8081.w2014.Green.Modeldata;
+package ch.bfh.btx8081.w2014.Green.Modeldata;
 
 import java.util.Date;
 

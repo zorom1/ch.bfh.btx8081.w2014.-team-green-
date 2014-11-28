@@ -2,7 +2,7 @@
 //*@Version 1.0
 //*@author Team Green
 
-package ch.bfh.bxt8081.w2014.Green.Modeldata;
+package ch.bfh.btx8081.w2014.Green.Modeldata;
 
 public class Doctor extends Person {
   private String UID;

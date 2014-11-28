@@ -1,4 +1,4 @@
-package ch.bfh.bxt8081.w2014.Green.Modeldata;
+package ch.bfh.btx8081.w2014.Green.Modeldata;
 
 public class Address {
 private String Street="";
