@@ -2,7 +2,7 @@
 //@author Team Green
 
 
-package ModelData;
+package Modeldata;
 
 public class Person {
   private String FirstName;

@@ -2,7 +2,7 @@
 //*@Version 1.0
 //*@author Team Green
 
-package ModelData;
+package Modeldata;
 
 public class Doctor extends Person {
   private String UID;

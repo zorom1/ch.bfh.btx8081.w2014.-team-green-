@@ -1,4 +1,4 @@
-package ModelData;
+package Modeldata;
 
 public class Diagnose {
 

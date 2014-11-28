@@ -2,7 +2,7 @@
 //*@version 1.0
 //* @author team Green
 
-package ModelData;
+package Modeldata;
 
 import java.util.Date;
 
