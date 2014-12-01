@@ -40,6 +40,7 @@ public void setPhone(String Phone){
 }
 @Override
 	public String toString() {
+	
 	return getStreet() + " "+getCity() +" "+ getPcode()+" " +getPhone();
 }
 }
