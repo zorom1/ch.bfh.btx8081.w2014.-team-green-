@@ -8,8 +8,8 @@ public class Doctor extends Person {
   private String UID;
   Doctor(){
 	    }
-  Doctor(String FirstName, String LastName, Address address, char Gender, String UID ){
-	  super(FirstName, LastName, address, Gender);
+  Doctor(String FirstName, String LastName,char Gender, String UID ){
+	  super(FirstName, LastName, Gender);
 	  this.UID=UID;
   }
   public String getUID(){
@@ -18,4 +18,8 @@ public class Doctor extends Person {
     public void setUID(String UID){
     	this.UID=UID;
     }
+    @Override
+	public String toString() {
+		return String.format("%s, %s",super.toString(), UID);
+	}	
 }

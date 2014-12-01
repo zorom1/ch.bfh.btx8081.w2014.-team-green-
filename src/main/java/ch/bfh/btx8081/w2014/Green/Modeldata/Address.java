@@ -38,4 +38,8 @@ public String getPhone(){
 public void setPhone(String Phone){
 	this.Phone=Phone;
 }
+@Override
+	public String toString() {
+	return getStreet() + " "+getCity() +" "+ getPcode()+" " +getPhone();
+}
 }

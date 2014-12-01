@@ -4,39 +4,33 @@
 
 package ch.bfh.btx8081.w2014.Green.Modeldata;
 
-public class Person {
+public abstract class Person {
   private String FirstName;
   private String LastName;
-  private Address address;
-  private char Gender;
+    private char Gender;
   
   Person(){
 	    };
-	Person(String aFirstName,String aLastName, Address Anaddress, char aGender){
+	Person(String aFirstName,String aLastName, char aGender){
 		FirstName=aFirstName;
 		LastName=aLastName;
-		address=Anaddress;
 		Gender=aGender;
 			}
 	public String getFirstName(){
 		return FirstName;
 	}
-	public void setFirstName(String firstName){
+	public void setFirstName(String FirstName){
 		this.FirstName=FirstName;
 	
 	}
-	public String getLastname(){
+	public String getLastName(){
 		return LastName;
 	}
 	public void setLastName(String LastName){
 		this.LastName=LastName;
 	}
-	public Address getAddresse(){
-		return address;
-	}
-	public void setAddress(Address address){
-		this.address=address;
-	}
+	
+	
 	public char getGender(){
 		return Gender;
 	}
@@ -44,6 +38,9 @@ public class Person {
 		this.Gender=Gender;
 		
 	}
-		
+	@Override
+	public String toString() {
+		return String.format("%s, %s", FirstName, LastName,Gender);
+	}	
 	}
 

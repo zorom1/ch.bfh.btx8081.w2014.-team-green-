@@ -9,14 +9,16 @@ import java.util.Date;
 public class Patient extends Person {
 
 	private String PID;
-	private Date Birthday;
+	private String Birthday;
 	private String Insurance; 
+	private Address address;
  Patient(){
 	  }
- Patient(String FirstName, String LastName, Address address, char Gender, String PID,
-		 Date Birthday, String Insurance){
-	 super(FirstName, LastName,address, Gender);
+ Patient(String FirstName, String LastName,char Gender,Address address, String PID,
+		 String Birthday, String Insurance){
+	 super(FirstName, LastName, Gender);
 	 this.PID=PID;
+	 this.address=address;
 	 this.Birthday=Birthday;
 	 this.Insurance=Insurance;
  }
@@ -25,11 +27,17 @@ public class Patient extends Person {
  }
  public void setPID(String PID){
 	 this.PID=PID;
- }
- public Date getBirthday(){
+	  }
+ public Address getAddress(){
+		return address;
+	}
+	public void setAddress(Address address){
+		this.address=address;
+	}	
+ public String getBirthday(){
 	 return Birthday;
  }
- public void setBirthday(Date Birthday){
+ public void setBirthday(String Birthday){
 	 this.Birthday=Birthday;
  }
  public String getInsurance(){
@@ -38,4 +46,10 @@ public class Patient extends Person {
  public void setInsurance(String Insurance){
 	 this.Insurance=Insurance;
  }
+ @Override
+	public String toString() {
+		return String.format("%s, %d, %s", super.toString(), address.toString(), PID,
+					Birthday, Insurance);
+	}
+
 }

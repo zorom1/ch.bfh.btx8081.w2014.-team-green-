@@ -1,0 +1,23 @@
+package ch.bfh.btx8081.w2014.Green.Modeldata;
+
+public class Medication {
+private String MedName;
+private double MedDosage;
+String treatNb;
+Medication(){
+	}
+  Medication(String Medname, double MedDose,String treatNb){
+	  this.MedName=Medname;
+	  this.MedDosage=MedDose;
+	  this.treatNb=treatNb;
+	  }
+  public String getMedName(){
+	  return MedName;
+  }
+  public double getMedDosage(){
+	  return MedDosage;
+  }
+  public String getTreatNb(){
+	  return treatNb;
+  }
+}
