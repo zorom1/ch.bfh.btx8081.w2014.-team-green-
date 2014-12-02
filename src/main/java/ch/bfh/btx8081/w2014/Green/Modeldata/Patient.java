@@ -8,10 +8,10 @@ import java.util.Date;
 
 public class Patient extends Person {
 
-	private String PID;
-	private String Birthday;
-	private String Insurance; 
-	private Address address;
+	private String PID=null;
+	private String Birthday=null;
+	private String Insurance=null; 
+	private Address address=null;
  Patient(){
 	  }
  Patient(String FirstName, String LastName,char Gender,Address address, String PID,

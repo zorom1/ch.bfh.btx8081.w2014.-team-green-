@@ -1,8 +1,8 @@
 package ch.bfh.btx8081.w2014.Green.Modeldata;
 
 public class Diagnose {
-private String DiagName;
-private int CaseNb;
+private String DiagName=null;
+private int CaseNb=0;
 Diagnose(){
 	}
 Diagnose(String Diagname, int CaseNb){

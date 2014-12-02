@@ -1,8 +1,8 @@
 package ch.bfh.btx8081.w2014.Green.Modeldata;
 
 public class Treatment {
-private String treatNb;
-private String treatName;
+private String treatNb=null;
+private String treatName=null;
 Treatment(){
 	}
 Treatment(String treatNb, String treatName){

@@ -5,7 +5,7 @@
 package ch.bfh.btx8081.w2014.Green.Modeldata;
 
 public class Doctor extends Person {
-  private String UID;
+  private String UID=null;
   Doctor(){
 	    }
   Doctor(String FirstName, String LastName,char Gender, String UID ){

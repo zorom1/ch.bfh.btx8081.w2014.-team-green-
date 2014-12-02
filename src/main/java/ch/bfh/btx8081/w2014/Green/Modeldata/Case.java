@@ -7,10 +7,10 @@ import java.util.List;
 
 public class Case {
 	//public Patient patient;
-	public String PID;
-	private int CaseNb;
-	private String StartDay;
-    private String Description;
+	public String PID=null;
+	private int CaseNb=0;
+	private String StartDay=null;
+    private String Description=null;
 	
 		private ArrayList<String> medication=new ArrayList<String>();
 		private ArrayList<String> diagnosis=new ArrayList<String>();

@@ -1,8 +1,8 @@
 package ch.bfh.btx8081.w2014.Green.Modeldata;
 
 public class Medication {
-private String MedName;
-private double MedDosage;
+private String MedName=null;
+private double MedDosage=0;
 String treatNb;
 Medication(){
 	}

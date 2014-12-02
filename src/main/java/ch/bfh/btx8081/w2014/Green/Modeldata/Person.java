@@ -5,9 +5,10 @@
 package ch.bfh.btx8081.w2014.Green.Modeldata;
 
 public abstract class Person {
-  private String FirstName;
-  private String LastName;
-    private char Gender;
+  private String FirstName=null;
+  private String LastName=null;
+    @SuppressWarnings("null")
+	private char Gender= (Character) null;
   
   Person(){
 	    };
