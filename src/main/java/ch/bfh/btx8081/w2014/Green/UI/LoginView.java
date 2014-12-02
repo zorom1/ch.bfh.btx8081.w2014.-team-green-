@@ -1,4 +1,4 @@
-package ch.bfh.btx8081.w2014.Green.MHCPMS;
+package ch.bfh.btx8081.w2014.Green.UI;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -26,11 +26,11 @@ import com.vaadin.ui.VerticalLayout;
 
 @Theme("mytheme")
 @SuppressWarnings("serial")
-public class Login extends UI
+public class LoginView extends UI
 {
 
     @WebServlet(value = "/*", asyncSupported = true)
-    @VaadinServletConfiguration(productionMode = false, ui = Login.class, widgetset = "ch.bfh.btx8081.w2014.Green.MHCPMS.AppWidgetSet")
+    @VaadinServletConfiguration(productionMode = false, ui = LoginView.class, widgetset = "ch.bfh.btx8081.w2014.Green.MHCPMS.AppWidgetSet")
     public static class Servlet extends VaadinServlet {
     }
 
