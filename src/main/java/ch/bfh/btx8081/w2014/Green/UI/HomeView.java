@@ -3,7 +3,7 @@ package ch.bfh.btx8081.w2014.Green.UI;
 /*Class HomeView shows a view which the user get after successful authorisation;
  * on the screen are 5 buttons
 @author team green  */
-import ch.bfh.btx8081.w2014.Green.Controller.MyNavigator;
+
 
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
