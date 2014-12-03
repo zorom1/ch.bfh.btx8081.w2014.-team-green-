@@ -4,12 +4,11 @@ package ch.bfh.btx8081.w2014.Green.MHCPMS;
 @author team green   
  */
 //must be created second view to test navigator
-import ch.bfh.btx8081.w2014.Green.MHCPMS.MyVaadinUI;
+//import ch.bfh.btx8081.w2014.Green.MHCPMS.MyVaadinUI;
+
 import ch.bfh.btx8081.w2014.Green.UI.HomeView;
-//import ch.bfh.btx8081.w2014.Green.UI.LoginView;
-
-
 import ch.bfh.btx8081.w2014.Green.UI.LoginView;
+
 
 import javax.servlet.annotation.WebServlet;
 
@@ -53,16 +52,16 @@ public class MyVaadinUI extends UI {
 			navigator.addView("LoginView",myLoginView);
 			navigator.navigateTo(LOGINVIEW);
 		 
-//		 HomeView myHomeView= new HomeView();
-//		navigator.addView("HomeView",myHomeView);
-//		navigator.addView(HOMEVIEW, myHomeView);
-//		navigator.navigateTo(HOMEVIEW);
+	//	 HomeView myHomeView= new HomeView();
+	//	navigator.addView("HomeView",myHomeView);
+	//	navigator.addView(HOMEVIEW, myHomeView);
+	//	navigator.navigateTo(HOMEVIEW);
 	}
 
-	public static void navigateTo(String view)
-    {
-        navigator.navigateTo(view);
-    }
+	//public static void navigateTo(String view)
+   // {
+     //   navigator.navigateTo(view);
+   // }
 
 
 
