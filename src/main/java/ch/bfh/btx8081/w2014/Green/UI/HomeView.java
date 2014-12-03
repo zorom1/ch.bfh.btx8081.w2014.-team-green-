@@ -140,7 +140,7 @@ public HomeView()
 @Override
 public void enter(ViewChangeEvent event) {
 	// TODO Auto-generated method stub
-	Notification.show("Welcome");
+	//Notification.show("Welcome");
 	}
 
 }

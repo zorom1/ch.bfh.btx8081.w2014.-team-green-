@@ -31,41 +31,42 @@ import com.vaadin.ui.VerticalLayout;
 @SuppressWarnings("serial")
 public class LoginView extends VerticalLayout implements View
 {        
-
+	Label space1 = new Label("");
+    Label label = new Label("Please type in your User ID and password.");
+    Label space2 = new Label("");
+    Label label3 = new Label("User ID");
+    TextField uidInput = new TextField();
+    Label space3 = new Label("");
+    Label label4 = new Label("Password");
+    PasswordField pwInput = new PasswordField("");
+    Label space4 = new Label("");
+    Button button2 = new Button("Login");
+    
 	public LoginView()
 	{
-	   VerticalLayout layout= new VerticalLayout();
+	   final VerticalLayout layout= new VerticalLayout();
 	   	layout.setSizeFull();
-	}
-	   	
 	
+	   	
+	showLogo();
 	
         /*
          * Logo
          */
         
      // Find the application directory
-        String basepath = VaadinService.getCurrent()
-                          .getBaseDirectory().getAbsolutePath();
+       // String basepath = VaadinService.getCurrent()
+                    //      .getBaseDirectory().getAbsolutePath();
 
         // Image as a file resource
-        FileResource resource = new FileResource(new File(basepath +
-                                "/META-INF/logoteamgreen.png"));
+        //FileResource resource = new FileResource(new File(basepath +
+                      //          "/META-INF/logoteamgreen.png"));
         
         /*
          * User Interface Labels, Buttons and Text Fields with its content.
          */
         
-        Label space1 = new Label("");
-        Label label = new Label("Please type in your User ID and password.");
-        Label space2 = new Label("");
-        Label label3 = new Label("User ID");
-        TextField uidInput = new TextField();
-        Label space3 = new Label("");
-        Label label4 = new Label("Password");
-        PasswordField pwInput = new PasswordField("");
-        Label space4 = new Label("");
-        Button button2 = new Button("Login");
+        
          
         /*
          * Adding the Components to the Layout
@@ -86,7 +87,7 @@ public class LoginView extends VerticalLayout implements View
         layout.addComponent(space4);
         layout.addComponent(button2);
        
-    
+	
 
 /*
  * Button Listener that shows up with click on "Login-Button"
@@ -97,13 +98,25 @@ button2.addClickListener(new Button.ClickListener()  {
 		layout.addComponent(new Label("Login succesfull."));
 	}	
 });
+	}
+	private FileResource showLogo(){
+		// Find the application directory
+        String basepath = VaadinService.getCurrent()
+                          .getBaseDirectory().getAbsolutePath();
 
+        // Image as a file resource
+        FileResource resource = new FileResource(new File(basepath +
+                                "/META-INF/logoteamgreen.png"));
+        return resource;
+		
+	}
+	
 /*method of the interface View
  */
 @Override
 public void enter(ViewChangeEvent event) {
 	// TODO Auto-generated method stub
-	Notification.show("Welcome");
+	//Notification.show("Welcome");
 	}
 
 }
