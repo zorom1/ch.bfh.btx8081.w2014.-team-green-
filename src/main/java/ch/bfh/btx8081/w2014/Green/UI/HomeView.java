@@ -35,8 +35,10 @@ public HomeView()
 {
    VerticalLayout layout= new VerticalLayout();
    	layout.setSizeFull();
+   	
+   	buildVertGridLayout();
    	}
- public GridLayout buildVerticalLayout() {
+ public GridLayout buildVertGridLayout() {
 	
 	gridLayout = new GridLayout(1, 5);
 	gridLayout.addStyleName("Buttons");
